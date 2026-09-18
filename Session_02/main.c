@@ -11,7 +11,7 @@ int main(){
     printf("The year is %d.\n", year);
 
     int quantity = 7;
-    printf("You ordered %d computers from our store!");
+    printf("You ordered %d computers from our store!", quantity);
 
 
     return 0;
