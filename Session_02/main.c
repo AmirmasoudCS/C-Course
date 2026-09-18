@@ -20,6 +20,8 @@ int main(){
     float gpa = 3.5;
     printf("Your GPA is %f.\n", gpa);
 
+    float price = 19.99;
+    printf("The price of the product is %.2f$.\n", price);
 
     return 0;
 }
