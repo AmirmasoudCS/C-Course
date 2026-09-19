@@ -68,6 +68,22 @@ int main(){
         printf("You are Offline!.\n");
     }
 
+    bool isStudent = true;
+    if(isStudent){
+        printf("You are a student.\n");
+    }
+    else{
+        printf("You are not a student!.\n");
+    }
+
+    bool isForSale = false;
+    if(isForSale){
+        printf("Item is for sale.\n");
+    }
+    else{
+        printf("Item is not for sale.\n");
+    }
+
 
 
 
