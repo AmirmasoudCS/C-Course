@@ -23,5 +23,13 @@ int main(){
     float price = 19.99;
     printf("The price of the product is $%.2f.\n", price);
 
+    float temp = -7.1;
+    printf("The temperature outside is %.1f°.", temp);
+
+    printf("\n\n========== Doubles ==========\n\n");
+
+    double pi = 3.14159265358979;
+    printf("The pi number is %.15lf", pi);
+
     return 0;
 }
