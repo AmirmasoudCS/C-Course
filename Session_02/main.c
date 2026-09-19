@@ -29,7 +29,12 @@ int main(){
     printf("\n\n========== Doubles ==========\n\n");
 
     double pi = 3.14159265358979;
-    printf("The pi number is %.15lf", pi);
+    printf("The pi number is %.15lf.\n", pi);
+
+    double e = 2.7182818284590;
+    printf("The value of e is %.15lf.\n", e);
+
+    
 
     return 0;
 }
