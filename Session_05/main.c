@@ -20,7 +20,29 @@ int main(){
     printf("%c\n", grade);
     printf("%s\n", name);
 
+    // Getting input from the user
 
+    printf("Please enter your age:\t");
+    scanf("%d", &age);                          // `&<variable>` means at the address of <variable> 
+    printf("\nPlease enter your gpa:\t");
+    scanf("%f", &gpa);
+    printf("\nEnter your grade:\t");
+    scanf(" %c", &grade);                           // If we don't clear our input buffer before accepting this `grade` variable, the grade buffer will get `\n` since it was leftover in the input buffer.
+                                                    // We can add a `space` before our `%` in the `scanf()` function.
+    printf("\nEnter your first name:\t");
+    scanf("%s", &name);                             // If we add space to the `scanf()` function, since the function can't read the white spaces, it will stop reading when encountering a white space.
+    printf("%s\n", name);                           // A solution to this is to use the function `fgets()` instead of `scanf()` function.
+                                                    // `fgets()` function stands for `file get string`.
+    printf("\nPlease enter your full name:\t");
+    fgets(name, sizeof(name), stdin);
+
+
+
+
+    printf("%d\n", age);
+    printf("%.2f\n", gpa);
+    printf("%c\n", grade);
+    printf("%s\n", name);
 
     return 0;
 }
