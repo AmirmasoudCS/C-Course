@@ -15,6 +15,11 @@ int main(){
     grade = '\0';           // Null Terminator : clears out whatever was stored inside our `grade` variable.
     char name[30] = "";     // An empty string that still  has 30 bytes as space.
 
+    printf("%d\n", age);
+    printf("%f\n", gpa);
+    printf("%c\n", grade);
+    printf("%s\n", name);
+
 
 
     return 0;
