@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>     // To helps us remove the `\n` at the end of the `fgets()` function.
+
 
 int main(){
 
@@ -35,10 +37,9 @@ int main(){
                                                     // `fgets()` function stands for `file get string`.
     printf("\nPlease enter your full name:\t");
     getchar();                                      // `getchar()` function helps us clear the input buffer.
-    fgets(name, sizeof(name), stdin);
-
-
-
+    fgets(name, sizeof(name), stdin);               // With `fgets()` function we have a `\n` at the end of our line that we need to get rid of.
+    name[strlen(name) - 1] = '\0';                  // Replacing the `\n` at the end of the name with a `\0` null terminator.
+    
 
     printf("%d\n", age);
     printf("%.2f\n", gpa);
