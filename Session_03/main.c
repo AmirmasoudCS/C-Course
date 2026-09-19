@@ -14,9 +14,26 @@ int main(){
     char currency = '$';            // %c
     char name[] = "Amirmasoud";     // %s
 
-
-
     printf("age:\t\t%d\nprice:\t\t%f\npi:\t\t\t%.14lf\ncurrency:\t%c\nname:\t\t%s\n", age, price, pi, currency, name);
+
+
+    printf("\n\n");
+    // Width
+
+    int num1 = 1, num2 = 10, num3 = -100;
+
+    printf("%+04d\n", num1);
+    printf("%+04d\n", num2);
+    printf("%+d\n", num3);
+
+    printf("\n\n");
+    // Precision
+
+    float price1 = 19.99, price2 = 1.50, price3 = -100.00;
+
+    printf("%+7.2f\n", price1);
+    printf("%+07.2f\n", price2);
+    printf("%+7.2f\n", price3);
 
 
     return 0;
