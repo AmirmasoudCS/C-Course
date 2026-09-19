@@ -47,7 +47,14 @@ int main(){
 
     printf("\n\n========== Strings (Array of characters in C) ==========\n\n");
 
-        
+    char name[] = "Amirmasoud";
+    printf("My name is %s.\n", name);
+    
+    char favFood[] = "Pizza";
+    printf("My favorite food is %s.\n", favFood);
+
+    char email[] = "fake12345@gmail.com";
+    printf("Your email is %s.\n", email);
 
     return 0;
 }
