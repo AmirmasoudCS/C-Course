@@ -1,4 +1,5 @@
-# include <stdio.h>
+#include <stdio.h>
+#include <stdbool.h>
 
 int main(){
 
@@ -55,6 +56,15 @@ int main(){
 
     char email[] = "fake12345@gmail.com";
     printf("Your email is %s.\n", email);
+
+    printf("\n\n========== Booleans ==========\n\n");
+
+    bool isOnline = true;
+    printf("%d.\n", isOnline);
+    if(isOnline){
+        printf("Your are online!.\n");
+    }
+
 
     return 0;
 }
