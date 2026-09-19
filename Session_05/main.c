@@ -34,6 +34,7 @@ int main(){
     printf("%s\n", name);                           // A solution to this is to use the function `fgets()` instead of `scanf()` function.
                                                     // `fgets()` function stands for `file get string`.
     printf("\nPlease enter your full name:\t");
+    getchar();                                      // `getchar()` function helps us clear the input buffer.
     fgets(name, sizeof(name), stdin);
 
 
