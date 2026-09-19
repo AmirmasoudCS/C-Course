@@ -34,7 +34,20 @@ int main(){
     double e = 2.7182818284590;
     printf("The value of e is %.15lf.\n", e);
 
-    
+    printf("\n\n========== Characters ==========\n\n");
+
+    char grade = 'A';
+    printf("Your grade is %c in the exam.\n", grade);
+
+    char symbol = '!';
+    printf("Your favourite symbol is %c.\n", symbol);
+
+    char currency = '$';
+    printf("The currency is %c.\n", currency);
+
+    printf("\n\n========== Strings (Array of characters in C) ==========\n\n");
+
+        
 
     return 0;
 }
