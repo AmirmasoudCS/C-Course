@@ -59,11 +59,16 @@ int main(){
 
     printf("\n\n========== Booleans ==========\n\n");
 
-    bool isOnline = true;
+    bool isOnline = false;
     printf("%d.\n", isOnline);
     if(isOnline){
-        printf("Your are online!.\n");
+        printf("Your are Online!.\n");
     }
+    else{
+        printf("You are Offline!.\n");
+    }
+
+
 
 
     return 0;
