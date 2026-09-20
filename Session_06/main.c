@@ -19,7 +19,7 @@ int main(){
     printf("Please enter the amount of products you want:\t");
     scanf("%d", &amount);
 
-    printf("You are buying %d amount of %s, which each cost %.2f.\nIt brings your total to: %.2f", amount, productName, productPrice, amount*productPrice);
+    printf("You are buying %d amount of %s, which each cost $%.2f.\nIt brings your total to: $%.2f", amount, productName, productPrice, amount*productPrice);
 
     return 0;
 }
