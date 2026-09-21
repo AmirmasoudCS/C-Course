@@ -14,6 +14,9 @@ struct Student{
 
 int main(){
 
+    struct Student student1 = {"Amirmasoud", 17, 21, true};
+    char* fullTime = (student1.isFullTime)? "Is full time student" : "Is not full time student";
+    printf("Student Information:\nName:\t%s\nGrade:\t%.2f\nAge:\t%d\n%s\n", student1.name, student1.grade, student1.age, fullTime);
 
 
     return 0;
