@@ -15,7 +15,7 @@ int main(){
     char weekdays[7][50] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
 
     for(int i = 0; i < 7; i++){
-        printf("%s is %d.\n", weekdays[i], toupper(weekdays[i]));
+        printf("%s is %d.\n", weekdays[i], (enum Day)i);
     }
 
     return 0;
