@@ -2,6 +2,7 @@
 //          benefits: Replaces numbers with readable names.
 
 #include <stdio.h>
+#include <ctype.h>
 
 enum Day{
 
@@ -11,7 +12,11 @@ enum Day{
 
 int main(){
 
+    char weekdays[7][50] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
 
+    for(int i = 0; i < 7; i++){
+        printf("%s is %d.\n", weekdays[i], toupper(weekdays[i]));
+    }
 
     return 0;
 }
