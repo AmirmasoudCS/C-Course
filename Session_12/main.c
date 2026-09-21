@@ -18,5 +18,8 @@ int main(){
         printf("%s is %d.\n", weekdays[i], (enum Day)i);
     }
 
+    enum Day today = MONDAY;
+    printf("Today is %d", today);
+
     return 0;
 }
