@@ -19,7 +19,9 @@ int main(){
     }
 
     enum Day today = MONDAY;
-    printf("Today is %d", today);
+    printf("Today is %d.\n\n", today);
+
+    (today == SATURDAY || today == SUNDAY)? printf("It is weekend!\n") : printf("It is weekday :(\n");
 
     return 0;
 }
