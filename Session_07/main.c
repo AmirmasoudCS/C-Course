@@ -29,7 +29,7 @@ int main(){
     printf("\nPlease enter the number of years you want to compund (t):\t");
     scanf("%d", &years);
 
-    total = principal * pow((1 + (interestRate / timesCompunded)), (timesCompunded * years));
+    total = principal * pow((1 + ((interestRate/100) / timesCompunded)), (timesCompunded * years));
 
     printf("\n====================\nYour total amount after compunding for %d years is: %.2lf", years, total);
     printf("\n====================\n");
