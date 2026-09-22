@@ -1,4 +1,5 @@
 // Working with files in C
+
 #include <stdio.h>
 
 
@@ -18,6 +19,24 @@ int main(){
 
 
     fclose(pFile);
+
+
+    pFile = fopen("./output.txt", "r");
+    if(pFile == NULL){
+        printf("Failed to open the file!\n");
+        return 1;
+    }
+
+    char line[] = "";
+    while(fgets(line, sizeof(line), pFile)){
+        printf("%s\n", line);
+    }
+
+    printf("\nFile was read successfully!\n");
+    fclose(pFile);
+    printf("File was closed successfully!\n");
+
+
 
 
     return 0;
