@@ -22,6 +22,10 @@ int main(){
         scanf("%f", &prices[i]);
         printf("\n");
     }
+    for(int i = 0; i < number; i++){
+        printf("$%.2f, ", prices[i]);
+    }
+    printf("\n");
 
 
 
