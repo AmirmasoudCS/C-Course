@@ -22,13 +22,20 @@ int main(){
     for(int i = 0; i < numberOfPlayers; i++){
         printf("%d, ", &scores[i]);
     }
-
+    printf("\n\n");
 
     free(scores);
     scores = NULL;
 
-
-
-
+    scores = calloc(numberOfPlayers, sizeof(int));
+    if(scores == NULL){
+        printf("Failed to allocate memory to scores!\n");
+        return 1;
+    }
+    for(int i = 0; i < numberOfPlayers; i++){
+        printf("%d, ", &scores[i]);
+    }
+    printf("\n\n");
+    
     return 0;
 }
