@@ -20,7 +20,7 @@ int main(){
         return 1;
     }
     for(int i = 0; i < numberOfPlayers; i++){
-        printf("%d, ", &scores[i]);
+        printf("%d, ", scores[i]);
     }
     printf("\n\n");
 
@@ -33,9 +33,9 @@ int main(){
         return 1;
     }
     for(int i = 0; i < numberOfPlayers; i++){
-        printf("%d, ", &scores[i]);
+        printf("%d, ", scores[i]);
     }
     printf("\n\n");
-    
+
     return 0;
 }
