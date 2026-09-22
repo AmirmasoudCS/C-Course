@@ -27,9 +27,9 @@ int main(){
         return 1;
     }
 
-    char line[] = "";
+    char line[256] = "";
     while(fgets(line, sizeof(line), pFile)){
-        printf("%s\n", line);
+        printf("%s", line);
     }
 
     printf("\nFile was read successfully!\n");
