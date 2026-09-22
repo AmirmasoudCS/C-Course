@@ -17,7 +17,7 @@ int main(){
 
 
     for(int i = 0; i < numberOfGrades ; i++){
-        char* seq = (i%10 == 0 && i != 11)? "st" : (i%10 == 1 && i != 12)? "nd" : (i%10 == 2 && i != 13)? "rd" : "th";
+        char* seq = (i%10 == 0 && i != 10)? "st" : (i%10 == 1 && i != 11)? "nd" : (i%10 == 2 && i != 12)? "rd" : "th";
         printf("Please enter the %d%s grade:\t", i+1, seq);
         scanf("%d", &grades[i]);
         printf("\n");
@@ -25,7 +25,7 @@ int main(){
 
     printf("Grades:\n");
     for(int i = 0; i < numberOfGrades; i++){
-        printf("%d,\t", grades[i]);
+        printf("%d, ", grades[i]);
     }
     printf("\n");
 
