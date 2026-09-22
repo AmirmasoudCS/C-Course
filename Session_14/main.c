@@ -7,8 +7,12 @@ int main(){
 
     int age = 25;
 
-    printf("The address of `age` variable is: %p", &age);
+    printf("The address of `age` variable is: %p\n", &age);
 
+
+    int *pAge = &age;                           // `*` is also known as the dereference operator, and `&` gives you the address/reference of a variable in the memory.
+
+    printf("%p", pAge);
 
     return 0;
 }
