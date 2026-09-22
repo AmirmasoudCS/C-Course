@@ -16,6 +16,20 @@ int main(){
     }
 
 
+    for(int i = 0; i < numberOfGrades ; i++){
+        char* seq = (i == 0)? "st" : (i == 1)? "nd" : (i == 2)? "rd" : "th";
+        printf("Please enter the %d%s grade:\t", i+1, seq);
+        scanf("%d", &grades[i]);
+        printf("\n");
+    }
+
+    printf("Grades:\n");
+    for(int i = 0; i < numberOfGrades; i++){
+        printf("%d,\t", grades[i]);
+    }
+    printf("\n");
+
+
     free(grades);                                           // freeing up the space we dynamically allocated.
     grades = NULL;                                          // avoiding having `dangling pointer`
 
