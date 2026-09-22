@@ -27,7 +27,7 @@ int main(){
         return 1;
     }
 
-    char line[256] = "";
+    char line[256];
     while(fgets(line, sizeof(line), pFile)){
         printf("%s", line);
     }
