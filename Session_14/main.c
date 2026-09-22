@@ -5,5 +5,10 @@
 
 int main(){
 
+    int age = 25;
+
+    printf("The address of `age` variable is: %p", &age);
+
+
     return 0;
 }
