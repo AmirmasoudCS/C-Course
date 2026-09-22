@@ -27,6 +27,30 @@ int main(){
     }
     printf("\n");
 
+    // Suppose now we want to either increase the size of our dynamic array or decrease it, we use `realloc()`.
+
+    int newNumber = 0;
+    printf("Enter a new number of prices: ");
+    scanf("%d", &newNumber);
+    float *temp = realloc(prices, newNumber * sizeof(float));           // `realloc()` also frees up the old memory that was allocated using `malloc()`.
+    if(temp == NULL){
+        printf("Failed to reallocate memory to prices!\n");
+    }
+    else{
+        prices = temp;
+        temp = NULL;
+        for(int i = number; i < newNumber; i++){
+            printf("Please enter the #%d price:\t", i+1);
+            scanf("%f", &prices[i]);
+            printf("\n");
+        }
+        for(int i = 0; i < newNumber; i++){
+            printf("$%.2f, ", prices[i]);
+            }
+        printf("\n");
+    }
+
+
 
 
     free(prices);
