@@ -25,5 +25,8 @@ int main(){
 
 
 
+    free(prices);
+    prices = NULL;
+
     return 0;
 }
